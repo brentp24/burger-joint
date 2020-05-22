@@ -14,6 +14,9 @@ function printQuestionMarks(num) {
 function objToSql(ob) {
   var arr = [];
 
+
+//check here. 
+
   // loop through the keys and push the key/value as a string int arr
   for (var key in ob) {
     var value = ob[key];
