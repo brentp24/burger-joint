@@ -1,0 +1,31 @@
+body {
+    background-image: url(https://unsplash.com/photos/sc5sTPMrVfk);
+}
+
+h1 {
+    columns: blue;
+}
+
+li {
+    padding: 5px;
+    margin: 5px;
+    background: #faebd7;
+  }
+  
+  .label {
+    font-weight: bold;
+  }
+  
+  .create-update-form {
+    padding: 5px;
+    margin: 5px;
+    background: aqua;
+  }
+  
+  .form-group {
+    margin-bottom: 5px;
+  }
+
+  .delete-burger {
+      background-color: rgb(245, 98, 98);
+  }
