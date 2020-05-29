@@ -1,31 +1,58 @@
-body {
-    background-image: url(https://unsplash.com/photos/sc5sTPMrVfk);
-}
+
+
 
 h1 {
-    columns: blue;
+    color: darkorange;
+    text-align: center;
 }
+
+h2 {
+    text-align: center;
+}
+
 
 li {
     padding: 5px;
     margin: 5px;
-    background: #faebd7;
+    background: lightblue;
+    /* color: black; */
   }
   
   .label {
     font-weight: bold;
   }
   
-  .create-update-form {
-    padding: 5px;
-    margin: 5px;
-    background: aqua;
-  }
-  
+
   .form-group {
     margin-bottom: 5px;
   }
 
-  .delete-burger {
-      background-color: rgb(245, 98, 98);
-  }
+  .burger-label {
+    text-align: right;
+}
+
+.btn-danger {
+    float: right;
+    margin: 5px;
+}
+
+.btn-success{
+    float: right;
+    margin: 5px;
+}
+
+body {
+    /* background-image: url("../img/burger.jpg"); */
+    background-color:rgb(9, 9, 61);
+    color:white;
+   }
+
+   .burger-pic {
+    width: 25px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+    margin-top: 10px;
+    margin-bottom: 10px;
+   }

@@ -1,33 +1,53 @@
-<h1>EAT DA BURGER</h1>
-
-<h2>Already Consumed</h2>
-
-<ol>
-  {{#each burgers}}
-    {{#if devoured}}
-      {{> burgers/burger-block devoured=true}}  
-    {{/if}}
-  {{/each}}
-</ol>
-
-<h2>Devour Burgers</h2>
-
-<ol>
-  {{#each burgers}}
-    {{#unless devoured}}
-      {{> burgers/burger-block devoured=false}}
-    {{/unless}}
-  {{/each}}
-</ol>
-
-<h2>Add a Burger</h2>
-<form class="create-form">
-
-  <div class="form-group">
-    <label for="bgr">Burger Type:</label>
-    <input type="text" id="bgr" name="burger_name">
+<h1>EAT A BURGER</h1>
+<div class="container">
+  <div class="row">
+    <div class="col-md">
+      <h2>Add a Burger</h2>
+      <form class="create-form">
+        <div class="form-group container">
+          <div class="row">
+            <div class="col burger-label">
+              <label for="bgr">Burger Type:</label>
+            </div>
+            <div class="col-8">
+              <input type="text" class="burger-entry form-control" id="bgr" name="burger_name">
+            </div>
+            <div class="col">
+              <button type="submit" class="btn btn-dark">Add Burger</button>
+            </div>
+          </div>
+        </div>
+      </form>
+    </div>
   </div>
+  
+ <img src="../img/burger.jpg" alt="burger pic" class = "burger-pic">
 
+  <div class="row">
+    
+    <div class="col-md">
+      <h2>Burgers to Devour</h2>
+      <ol>
+        {{#each burgers}}
+        {{#unless devoured}}
+        {{> burgers/burger-block devoured=false}}
+        {{/unless}}
+        {{/each}}
+      </ol>
+    </div>
 
-  <button type="submit">Add Burger</button>
-</form>
+    <div class="col-md">
+      <h2>Already Consumed</h2>
+      <ol>
+        {{#each burgers}}
+        {{#if devoured}}
+        {{> burgers/burger-block devoured=true}}
+        {{/if}}
+        {{/each}}
+      </ol>
+    </div>
+  </div>
+  <footer>
+    Photo by <a href = "https://unsplash.com/@amir_v_ali?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">amirali mirhashemian</a> on Unsplash
+
+  </footer>
